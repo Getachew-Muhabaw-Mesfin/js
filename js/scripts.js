@@ -75,18 +75,18 @@ console.log(2 + true); // 3 - true value is 1 so 2+1 == 3
 
 ///////////////////Question 3 /////////////////////////////////
 
-let a = Number(prompt("Please enter first number :"))
-let b = Number(prompt("Please enter second number :"))
-let c = a+b
+// let a = Number(prompt("Please enter first number :"))
+// let b = Number(prompt("Please enter second number :"))
+// let c = a+b
 
-if (a && b) {
-  console.log(
-    ` %c The sum of ${a} and  ${b} is: %c ${c}`,
-    "font-size: 21px",
-    "color:green;font-size: 21px"
-  );
-  document.write("The sum of " + a + " and " + b + " is: " + c);
-}
+// if (a && b) {
+//   console.log(
+//     ` %c The sum of ${a} and  ${b} is: %c ${c}`,
+//     "font-size: 21px",
+//     "color:green;font-size: 21px"
+//   );
+//   document.write("The sum of " + a + " and " + b + " is: " + c);
+// }
 
 
 
@@ -94,5 +94,12 @@ if (a && b) {
 
 
 ///////////////// Question 4  /////////////////////
+
+
+let first_name = "Getachew"
+let last_name = "Muhabaw"
+let full_name = `Your Name is: ${first_name} ${last_name}`
+
+console.log(`%c ${full_name}`,'font-size: 24px; color:blue')
 
 
