@@ -175,8 +175,8 @@ function evenOddDifference(arr) {
 }
 
 let d = [5, 6, 99, 8, 76, 4, 68, 44];
-let dd = evenOddDifference(d)
-console.log(dd)
+// let dd = evenOddDifference(d)
+// console.log(dd)
 
 
 
@@ -184,3 +184,65 @@ console.log(dd)
 
 
 
+//////////////////Questions 8 ///////////////////////
+
+/**
+Write a function that takes an array as a parameter and logs in the console the elements that have
+even indexes only. Notice: this question is not asking you to log elements with even value, but
+elements that are located on even indexes)
+    Test case 1: If you give this array to the function [5, 6, 99, 8, 76, 4, 68, 44], toutput
+    should be:
+            5
+            99
+            76
+            68
+Test case 2: If you give this array to the function [11, “Sam”, 3, 7, “car”], output should
+be:
+        11
+        3
+        car
+ */
+
+function evenIndexElements(arr) {
+    for(let i =0; i<arr.length; i++) {
+        if(i%2 ===0) {
+            console.log(arr[i])
+        }
+    }
+}
+
+// evenIndexElements([5, 6, 99, 8, 76, 4, 68, 44]);
+// evenIndexElements([11, "Sam", 3, 7, "car"])
+
+
+
+
+
+
+
+
+///////////////////Question 9  //////////////////////////
+//Why javascript sort gets so many memes -> https://www.youtube.com/watch?v=u7NFUX62-cM
+let fun = [6,-2,2,-7]
+console.log(fun.sort())
+
+function mySort(a,b) {
+    if(a>b) {
+        return 1
+    }
+    else if (b>a) {
+        return -1
+    }
+    else {
+        return 0
+    }
+}
+
+// cool thing happens here
+// let sortedArray = fun.sort(mySort);
+// console.log(sortedArray)
+
+
+
+let s = fun.sort((a,b)=>a-b) // Recommend for number comparision only
+console.log("Sorted Array is: ",s)
