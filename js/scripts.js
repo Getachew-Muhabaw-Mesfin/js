@@ -59,9 +59,9 @@ var num2 = num1++;
 console.log(num2); // 11 - it increased by 1
 
 
-let a = 1;
-let b = (a !== 2);
-console.log(b); // true - !false
+let n = 1;
+let m = (n !== 2);
+console.log(m); // true - !false
 
 console.log(+"2" + 2); // 4 -js assume that it sould be add
 console.log("2" + 2); //22 -concat 
@@ -70,3 +70,13 @@ console.log(+"a" + 2); // NaN - we can not add string a with number 2 mathematic
 console.log(7 % 3); //1 - calculate the reminder
 
 console.log(2 + true); // 3 - true value is 1 so 2+1 == 3
+
+
+
+///////////////////Question 3 /////////////////////////////////
+
+let a = Number(prompt("Please enter first number"))
+let b = Number(prompt("Please enter second number"))
+let c = a+b
+console.log(`The sum of ${a} and ${b} is: ${c}`)
+
