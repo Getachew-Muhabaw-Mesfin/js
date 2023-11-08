@@ -182,13 +182,13 @@ console.log("Array", myArray(arry))
 /**Create a function that returns true when num1 is equal to num2; otherwise return false */
 
 
-function comparision(num1,num2) {
+function isEqual(num1,num2) {
     if(num1 === num2)
     return true
     else
     return false
 }
-let value =comparision(3,2)
+let value =isEqual(3,2)
 console.log(value)
 
 
@@ -240,9 +240,6 @@ function checkParity(num) {
 
 let n =checkParity(4)
 console.log(n)
-
-
-
 
 
 
