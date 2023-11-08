@@ -1,3 +1,8 @@
+'use strict'
+
+///////////////////Question 1/////////////
+
+
 console.log("24>3 :", 24 > 3);
 console.log('2 < "12" :', 2 < "12");
 console.log("0 == 2 :", 0 == 2);
@@ -23,14 +28,4 @@ console.log(
  * Undefined
  * Null
  * NaN
- */
-
-// console.log('2'+'2'-'2') => 20
-
-/**
- * let x = "5" + 2 + 3;
-//output 523
-
-let x = 2 + 3 + "5";
-// output 55
  */
