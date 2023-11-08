@@ -42,8 +42,8 @@ console.log(
 console.log(1==1) // True - the value are equal
 console.log(1===1) //Ture -both value and type are equal
 console.log('1'===1) //False - the same value but d/f data type
-
-console.log(x = (1 == true)); // True - The value of true is 1
+let t = 1 == true;
+console.log(t); // True - The value of true is 1
 
 let x = 10;
 let y = (x > 5) && (x < 15)
@@ -75,8 +75,24 @@ console.log(2 + true); // 3 - true value is 1 so 2+1 == 3
 
 ///////////////////Question 3 /////////////////////////////////
 
-let a = Number(prompt("Please enter first number"))
-let b = Number(prompt("Please enter second number"))
+let a = Number(prompt("Please enter first number :"))
+let b = Number(prompt("Please enter second number :"))
 let c = a+b
-console.log(`The sum of ${a} and ${b} is: ${c}`)
+
+if (a && b) {
+  console.log(
+    ` %c The sum of ${a} and  ${b} is: %c ${c}`,
+    "font-size: 21px",
+    "color:green;font-size: 21px"
+  );
+  document.write("The sum of " + a + " and " + b + " is: " + c);
+}
+
+
+
+
+
+
+///////////////// Question 4  /////////////////////
+
 
