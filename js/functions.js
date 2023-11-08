@@ -161,15 +161,16 @@ console.log("Total Number of Legs :" , totalNumberOfLeges(chickens,cows,pigs))
 returns a value that is 3 times the first element of the array
  */
 
+function myArray(arr) {
+    if(arr.length == 2) {
+        return arr[0]*3;
+    }
+    else
+    return "Not Valid Array!"
+}
 
-
-
-
-
-
-
-
-
+let arry = [3,2]
+console.log("Array", myArray(arry))
 
 
 
@@ -181,10 +182,14 @@ returns a value that is 3 times the first element of the array
 /**Create a function that returns true when num1 is equal to num2; otherwise return false */
 
 
-
-
-
-
+function comparision(num1,num2) {
+    if(num1 === num2)
+    return true
+    else
+    return false
+}
+let value =comparision(3,2)
+console.log(value)
 
 
 
@@ -203,7 +208,12 @@ returns a value that is 3 times the first element of the array
 return false.
  */
 
-
+function divisibleBy100( num) {
+    if(num%100 ===0) return true
+    else return false
+}
+let d = divisibleBy100(100)
+console.log(d)
 
 
 
@@ -221,12 +231,15 @@ return false.
 /**Create a function that takes a number as an argument and returns "even" for even numbers
 and "odd" for odd numbers */
 
+function checkParity(num) {
+    if(num%2 === 0)
+    return "Even"
+    else 
+    return "Odd"
+}
 
-
-
-
-
-
+let n =checkParity(4)
+console.log(n)
 
 
 
@@ -236,10 +249,31 @@ and "odd" for odd numbers */
 
 /////////// Question 14://////////////////////
 
-/**reate a function that returns
+/**Create a function that returns
             ○ “Invalid score” if score is above 100 or score is a negative number
             ○ “Grade A” when score is between 90 and 100 (both 90 and 100 included)
             ○ “Grade B” when score is between 80 and 89 (both 80 and 89 included)
             ○ “Grade C” for any score below 79
  */
 
+function checkYourGrade(score) {
+    if(!isNaN(score)){
+       if(score >100 || score < 0){
+        console.log("Your Score can not be negetive or greater than 100")
+       }
+       else if (score >=90) {
+        console.log("You Grade is : A")
+       }
+       else if (score>=80) {
+        console.log("You Grade is : B");
+       }
+       else {
+        console.log("You Grade is : C");
+       }
+    }
+    else {
+        console.log("Please Enter Valid Grade:")
+    }
+}
+
+checkYourGrade(60)
