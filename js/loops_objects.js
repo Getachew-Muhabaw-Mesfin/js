@@ -103,3 +103,84 @@ let b = [1, "Hello", 8, 44];
 b = ["world", 13];
 
 // arrayLength(b)
+
+
+////////////////Question 6 //////////////////////////////////////
+/*
+Write a function that takes an array of numbers as a parameter and logs in the console the sum of
+all the numbers in the array.
+        Test case 1: If you give this array, [5, 6, 99, 8, 76, 4, 68, 44], to the function, output
+        should be: 310 because 5 + 6 + 99 + 8 + 76 + 4 + 68 + 44
+        Test case 2: If you give this array, [3, 0], to the function, output should be: 3 because
+        3 + 0
+*/
+
+function sumOfArrays(arr) {
+    let total =0
+    for(let i =0; i<arr.length; i++) {
+        total += arr[i]
+    }
+    return total
+}
+
+// let arry = [5, 6, 99, 8, 76, 4, 68, 44];
+// let t = sumOfArrays(arry);
+// console.log(t)
+//  arry = [3,0];
+//  t = sumOfArrays(arry);
+// console.log(t)
+
+
+
+
+///////////////// Question 7 //////////////////////////////////
+
+/** 
+ * Write a function that takes an array of all numbers as a parameter, subtracts the total sum of all
+odd numbers of the array from the total sum of all even numbers and logs the result in the
+console.
+    Test case: If you give these array, [5, 6, 99, 8, 76, 4, 68, 44], to the function, output
+    should be: 102
+        ■ Sum of odd numbers: 5 + 99 = 104
+        ■ Sum of even numbers: 6 + 8 + 76 + 4 + 68 + 44 = 206
+        ■ Difference between total even and total odd numbers: 206 - 104 = 102 
+*/
+
+function evenOddDifference(arr) {
+    let evens = 0
+    let odds = 0
+    for(let i=0; i<arr.length; i++) {
+        if(arr[i]%2 ===0) {
+            evens += arr[i]
+        }
+        else {
+            odds += arr[i]
+        }
+    }
+    let difference = evens - odds
+    return difference
+    
+    // Method 2
+    // let total =0
+    // let evens = 0
+    // for(let i=0; i<arr.length; i++) {
+    //     total += arr[i]
+    //     if(arr[i]%2 ===0){
+    //         evens += arr[i]
+    //     }
+
+    // }
+    // let oddes = total -evens
+    // return evens - oddes
+}
+
+let d = [5, 6, 99, 8, 76, 4, 68, 44];
+let dd = evenOddDifference(d)
+console.log(dd)
+
+
+
+
+
+
+
