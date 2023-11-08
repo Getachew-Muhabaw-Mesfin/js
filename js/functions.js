@@ -73,9 +73,12 @@ myFifth(arr)
 
 /**Write a function that takes an integer minutes and converts it to seconds */
 
+function minutesToSeconds(minutes){
+    let seconds = minutes*60
+   console.log(`${minutes} minutes is equal to ${seconds} seconds`);
+}
 
-
-
+minutesToSeconds(4)
 
 
 
@@ -86,6 +89,15 @@ myFifth(arr)
 returns the result.
  */
 
+function increment(x) {
+  if (!isNaN(x)) return (x = x + 1); // x++
+  else  console.log("Please enter valid number")
+}
+
+console.log(increment(4));
+
+
+
 
 
 
@@ -95,10 +107,16 @@ returns the result.
 
 /**Write a function that takes the base and height of a triangle and returns its area. */
 
+function areaOfTriangle(base, height) {
+    if(typeof base == "number" && typeof height == "number") {
+        let area = (base*height)/2
+        return area
+    }
+    else
+    return "Please enter valid base or height"
+}
 
-
-
-
+console.log("The area is :", areaOfTriangle(6,2))
 
 
 
@@ -111,8 +129,20 @@ farmer breeds three species (chickens = 2 legs, cows =, 4 legs, pigs = 4 legs). 
 the farmer wants to know the total number of legs and not the total number of animals.
  */
 
+function totalNumberOfLeges(chickens, cows, pigs) {
+      let chickens_leg = chickens*2
+      let cows_leg = cows*4
+      let pigs_leg = pigs*4
+      let total_number_of_legs = chickens_leg + cows_leg + pigs_leg
 
+      return total_number_of_legs;
 
+}
+let chickens = parseInt(prompt("How many Chickens Do you have?"));
+let cows = parseInt(prompt("How many Cows Do you have?"));
+let pigs = parseInt(prompt("How many Pigs Do you have?"));
+
+console.log("Total Number of Legs :" , totalNumberOfLeges(chickens,cows,pigs))
 
 
 
