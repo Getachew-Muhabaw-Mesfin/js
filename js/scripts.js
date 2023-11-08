@@ -3,22 +3,22 @@
 ///////////////////Question 1/////////////
 
 document.getElementById("title").innerHTML =
-  "INSPECT To See the OUTPUT use F12 ";
+  "INSPECT To See the OUTPUT use F12 ".toUpperCase();
 
-console.log("24>3 :", 24 > 3);
-console.log('2 < "12" :', 2 < "12");
-console.log("0 == 2 :", 0 == 2);
-console.log("2.0 === 2", 2.0 === 2);
-console.log('2.0 == "2":', 2.0 == "2");
-console.log('2 < "John"', 2 < "John");
-console.log('2 > "John"', 2 > "John");
-console.log('"2" < "2"', "2" < "2");
-console.log('"2" > "12"', "2" > "12");
-console.log("1 == 1 || 3 == 2 || 3 == 7", 1 == 1 || 3 == 2 || 3 == 7);
-console.log("1 == 1 && 2 == 2 && 3 == 7", 1 == 1 && 2 == 2 && 3 == 7);
-console.log("1 == 1 || 2 == 2 && 3 == 7", 1 == 1 || (2 == 2 && 3 == 7));
+console.log("A. 24>3 :", 24 > 3);
+console.log('B. 2 < "12" :', 2 < "12");
+console.log("C. 0 == 2 :", 0 == 2);
+console.log("D. 2.0 === 2", 2.0 === 2);
+console.log('E. 2.0 == "2":', 2.0 == "2");
+console.log('F. 2 < "John"', 2 < "John");
+console.log('G. 2 > "John"', 2 > "John");
+console.log('H. "2" < "2"', "2" < "2");
+console.log('I. "2" > "12"', "2" > "12");
+console.log("J. 1 == 1 || 3 == 2 || 3 == 7", 1 == 1 || 3 == 2 || 3 == 7);
+console.log("K. 1 == 1 && 2 == 2 && 3 == 7", 1 == 1 && 2 == 2 && 3 == 7);
+console.log("L. 1 == 1 || 2 == 2 && 3 == 7", 1 == 1 || (2 == 2 && 3 == 7));
 console.log(
-  '1 == true && 0 > true || "31" > "9" || 10 > 5 || !("2" == "two" || 1 == "1")',
+  'M. 1 == true && 0 > true || "31" > "9" || 10 > 5 || !("2" == "two" || 1 == "1")',
   (1 == true && 0 > true) || "31" > "9" || 10 > 5 || !("2" == "two" || 1 == "1")
 );
 
@@ -73,20 +73,23 @@ console.log(2 + true); // 3 - true value is 1 so 2+1 == 3
 
 
 
-///////////////////Question 3 /////////////////////////////////
+/////////////////Question 3 /////////////////////////////////
 
-// let a = Number(prompt("Please enter first number :"))
-// let b = Number(prompt("Please enter second number :"))
-// let c = a+b
+let a = Number(prompt("Please enter first number :"))
+let b = Number(prompt("Please enter second number :"))
+let c = a+b
 
-// if (a && b) {
-//   console.log(
-//     ` %c The sum of ${a} and  ${b} is: %c ${c}`,
-//     "font-size: 21px",
-//     "color:green;font-size: 21px"
-//   );
-//   document.write("The sum of " + a + " and " + b + " is: " + c);
-// }
+if (!isNaN(a) && !isNaN(b)) {
+  console.log(
+    ` %c The sum of ${a} and  ${b} is: %c ${c}`,
+    "font-size: 21px",
+    "color:green;font-size: 21px"
+  );
+  
+}
+else 
+console.log("Please Enter Valid Number")
+
 
 
 
