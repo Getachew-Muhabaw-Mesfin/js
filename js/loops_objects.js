@@ -330,4 +330,30 @@ function calculateAverage(obj) {
     console.log(Math.round(average)); // 29
 }
 
-calculateAverage(evangadiClass)
+// calculateAverage(evangadiClass)
+
+
+
+
+
+/////////////////////////// Question 14   ///////////////////////////////
+
+/*
+ Write a function that takes the "evangadiClass" object as an argument and calculates the
+percentage of male students in the class. Print the result on the console
+
+*/
+
+
+function malePercent(obj) {
+    let male_counter = 0
+    let total_number_0f_students = obj.students.length
+    for(let i =0; i<total_number_0f_students; i++) {
+        if(obj.students[i].sex === "M") {
+            male_counter ++
+        }
+    }
+    let percent = (male_counter/total_number_0f_students)*100;
+    console.log(percent)
+}
+malePercent(evangadiClass)
