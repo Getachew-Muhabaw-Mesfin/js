@@ -310,3 +310,24 @@ console.log(evangadiClass.topicsCovered);
 
 
 
+//////////////Question 14////////////////////////////////////////
+
+/**
+ * Write a function that takes the "evangadiClass" object as an argument and calculates the average
+age of the class. Print the result on the console
+
+ */
+
+function calculateAverage(obj) {
+    let sum = 0
+    let number_of_students = obj.students.length;
+    for (let i = 0; i < number_of_students; i++) {
+        sum += obj.students[i].age
+    }
+    let average = sum/number_of_students
+
+    console.log(average) // 29.2
+    console.log(Math.round(average)); // 29
+}
+
+calculateAverage(evangadiClass)
