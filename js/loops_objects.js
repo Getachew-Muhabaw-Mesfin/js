@@ -250,9 +250,9 @@ function customeSort(sampleArray) {
 
 
 /**
- * hange the lengthOfCourse property of the object to "5 Month" and print the new object on the
+ * Change the lengthOfCourse property of the object to "5 Month" and print the new object on the
 console
-○ // Use the dot notation "." to call the property you want to change
+    Use the dot notation "." to call the property you want to change
  */
 let evangadiClass = {
 lengthOfCourse: "1 Month",
@@ -290,10 +290,23 @@ students: [
 
 
 
-
-
 evangadiClass.lengthOfCourse = "5 Month";
 console.log(evangadiClass.lengthOfCourse);
+
+
+
+
+////////////////////////// Question 12 ////////////////
+
+/**
+ Add "Bootstrap" at the end of the topicsCovered property and print the new object on the
+console
+  Use an array method
+
+ */
+
+evangadiClass.topicsCovered.push("Bootstrap");
+console.log(evangadiClass.topicsCovered);
 
 
 
