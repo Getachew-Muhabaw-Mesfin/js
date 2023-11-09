@@ -221,7 +221,7 @@ function evenIndexElements(arr) {
 
 
 
-///////////////////Question 9  //////////////////////////
+//// Bones
 //Why javascript sort gets so many memes -> https://www.youtube.com/watch?v=u7NFUX62-cM
 let fun = [6,-2,2,-7]
 console.log(fun.sort())
@@ -244,5 +244,23 @@ function mySort(a,b) {
 
 
 
-let s = fun.sort((a,b)=>a-b) // Recommend for number comparision only
-console.log("Sorted Array is: ",s)
+// let s = fun.sort((a,b)=>a-b) // Recommend for number comparision only
+// console.log("Sorted Array is: ",s)
+
+
+
+///////////////////Question 9 Questions on built in JavaScript methods //////////////////////////
+
+/**Write a function that takes the sampleArray as a parameter, removes the last element from the array,
+adds a new value of "32" to the array and prints the new array on the console. Hint: use an array method
+ */
+
+let sampleArray = [5, 6, 99, 8, 76, 4, 68, 44];
+function removeLast(sampleArray) {
+    sampleArray.pop()
+    sampleArray.push(32)
+
+    console.log(sampleArray)
+
+}
+removeLast(sampleArray)
