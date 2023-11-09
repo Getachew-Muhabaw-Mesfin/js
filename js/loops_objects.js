@@ -408,4 +408,39 @@ function fizzBuzz() {
     }
 }
 }
-fizzBuzz();
+// fizzBuzz();
+
+
+
+
+
+
+
+////////////// Question 17  ////////////////////////////
+
+/**
+ *Evens number
+ An Evens number is an integer whose digits are all even. For example 2426 is an Evens
+number but 3224 is not. Write a function named isEvens that prints on the console 1 if its
+integer argument is an Evens number. The function prints 0 otherwise.
+ */
+
+
+
+function isEven(digits) {
+    digits = String(digits);
+    let d = ""
+    for(let i =0; i< digits.length; i++) {
+        if(digits.charAt(i)%2 ==0){
+            d = d + digits.charAt(i);
+        }
+    }
+    if(d == digits) {
+        return 1
+    }
+    else {
+        return 0
+    }
+}
+let e =isEven(2426);
+console.log(e)
