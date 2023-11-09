@@ -6,15 +6,11 @@ the JavaScript for loop
  */
 
 function print10Numbers() {
-    for(let i =1; i<=10; i++) {
-        console.log(i)
-    }
+  for (let i = 1; i <= 10; i++) {
+    console.log(i);
+  }
 }
 // print10Numbers()
-
-
-
-
 
 ////////////////Question 2 /////////////////////
 
@@ -30,14 +26,12 @@ console. Note: each output should be displayed on a new line.
  */
 
 function next5Numbers(num) {
-    for(let i = num +1 ; i<= num+5; i++) {
-        console.log(i)
-    }
+  for (let i = num + 1; i <= num + 5; i++) {
+    console.log(i);
+  }
 }
 
 // next5Numbers(7)
-
-
 
 ////////////////////// Question 3 ////////////////////////////
 /**
@@ -50,16 +44,14 @@ given number.
 */
 
 function sumOfNext10Numbers(num) {
-    let sum =0
-    for(let i = num+1; i<=num+10; i++) {
-        sum += i
-    }
-    console.log(sum)
+  let sum = 0;
+  for (let i = num + 1; i <= num + 10; i++) {
+    sum += i;
+  }
+  console.log(sum);
 }
 
-
 // sumOfNext10Numbers(7)
-
 
 //////////// Question 4 /////////////////////////
 
@@ -74,17 +66,13 @@ console.
  */
 
 function arrayList(arr) {
-    for(let i =0; i<arr.length; i++) {
-        console.log(arr[i])
-    }
+  for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+  }
 }
-let a = [1, "Hello", 8, 44]
+let a = [1, "Hello", 8, 44];
 
 // arrayList(a)
-
-
-
-
 
 ///////// Question 5 ///////////////////////
 
@@ -96,14 +84,13 @@ found in the array. Hint: use a property of the Array object to solve this quest
  */
 
 function arrayLength(arr) {
-    console.log(arr.length)
+  console.log(arr.length);
 }
 let b = [1, "Hello", 8, 44];
 // arrayLength(b)
 b = ["world", 13];
 
 // arrayLength(b)
-
 
 ////////////////Question 6 //////////////////////////////////////
 /*
@@ -116,11 +103,11 @@ all the numbers in the array.
 */
 
 function sumOfArrays(arr) {
-    let total =0
-    for(let i =0; i<arr.length; i++) {
-        total += arr[i]
-    }
-    return total
+  let total = 0;
+  for (let i = 0; i < arr.length; i++) {
+    total += arr[i];
+  }
+  return total;
 }
 
 // let arry = [5, 6, 99, 8, 76, 4, 68, 44];
@@ -129,9 +116,6 @@ function sumOfArrays(arr) {
 //  arry = [3,0];
 //  t = sumOfArrays(arry);
 // console.log(t)
-
-
-
 
 ///////////////// Question 7 //////////////////////////////////
 
@@ -147,42 +131,35 @@ console.
 */
 
 function evenOddDifference(arr) {
-    let evens = 0
-    let odds = 0
-    for(let i=0; i<arr.length; i++) {
-        if(arr[i]%2 ===0) {
-            evens += arr[i]
-        }
-        else {
-            odds += arr[i]
-        }
+  let evens = 0;
+  let odds = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+      evens += arr[i];
+    } else {
+      odds += arr[i];
     }
-    let difference = evens - odds
-    return difference
-    
-    // Method 2
-    // let total =0
-    // let evens = 0
-    // for(let i=0; i<arr.length; i++) {
-    //     total += arr[i]
-    //     if(arr[i]%2 ===0){
-    //         evens += arr[i]
-    //     }
+  }
+  let difference = evens - odds;
+  return difference;
 
-    // }
-    // let oddes = total -evens
-    // return evens - oddes
+  // Method 2
+  // let total =0
+  // let evens = 0
+  // for(let i=0; i<arr.length; i++) {
+  //     total += arr[i]
+  //     if(arr[i]%2 ===0){
+  //         evens += arr[i]
+  //     }
+
+  // }
+  // let oddes = total -evens
+  // return evens - oddes
 }
 
 let d = [5, 6, 99, 8, 76, 4, 68, 44];
 // let dd = evenOddDifference(d)
 // console.log(dd)
-
-
-
-
-
-
 
 //////////////////Questions 8 ///////////////////////
 
@@ -204,50 +181,37 @@ be:
  */
 
 function evenIndexElements(arr) {
-    for(let i =0; i<arr.length; i++) {
-        if(i%2 ===0) {
-            console.log(arr[i])
-        }
+  for (let i = 0; i < arr.length; i++) {
+    if (i % 2 === 0) {
+      console.log(arr[i]);
     }
+  }
 }
 
 // evenIndexElements([5, 6, 99, 8, 76, 4, 68, 44]);
 // evenIndexElements([11, "Sam", 3, 7, "car"])
 
-
-
-
-
-
-
-
 //// Bones
 //Why javascript sort gets so many memes -> https://www.youtube.com/watch?v=u7NFUX62-cM
-let fun = [6,-2,2,-7]
-console.log(fun.sort())
+let fun = [6, -2, 2, -7];
+console.log(fun.sort());
 
-function mySort(a,b) {
-    if(a>b) {
-        return 1
-    }
-    else if (b>a) {
-        return -1
-    }
-    else {
-        return 0
-    }
+function mySort(a, b) {
+  if (a > b) {
+    return 1;
+  } else if (b > a) {
+    return -1;
+  } else {
+    return 0;
+  }
 }
 
 // cool thing happens here
 // let sortedArray = fun.sort(mySort);
 // console.log(sortedArray)
 
-
-
 // let s = fun.sort((a,b)=>a-b) // Recommend for number comparision only
 // console.log("Sorted Array is: ",s)
-
-
 
 ///////////////////Question 9 Questions on built in JavaScript methods //////////////////////////
 
@@ -257,22 +221,13 @@ adds a new value of "32" to the array and prints the new array on the console. H
 
 let sampleArray = [5, 6, 99, 8, 76, 4, 68, 44];
 function removeLast(sampleArray) {
-    sampleArray.pop()
-    sampleArray.push(32)
+  sampleArray.pop();
+  sampleArray.push(32);
 
-    console.log(sampleArray)
-
+  console.log(sampleArray);
 }
 
 // removeLast(sampleArray)
-
-
-
-
-
-
-
-
 
 ////////////////// Question 10 ///////////////////////////////////
 
@@ -283,10 +238,62 @@ You should use this sorting syntax - sort(function(a, b){return a-b});
 */
 
 function customeSort(sampleArray) {
-    let asSort = sampleArray.sort((a,b)=> a-b) 
-    // let dsSort = sampleArray.sort((a,b)=>b-a) // Dscending Order
+  let asSort = sampleArray.sort((a, b) => a - b);
+  // let dsSort = sampleArray.sort((a,b)=>b-a) // Dscending Order
 
-    console.log("Ascending Order :" , asSort);
-    // console.log("Dscending Order :",  dsSort);
+  console.log("Ascending Order :", asSort);
+  // console.log("Dscending Order :",  dsSort);
 }
 // customeSort(sampleArray)
+
+//////////////////////////// Question 11  From the give class below///////////////////
+
+
+/**
+ * hange the lengthOfCourse property of the object to "5 Month" and print the new object on the
+console
+○ // Use the dot notation "." to call the property you want to change
+ */
+let evangadiClass = {
+lengthOfCourse: "1 Month",
+website: "https://www.evangadi.com/",
+isChallenging: false,
+topicsCovered: ["HTML", "CSS", "Media Query", "JavaScript"],
+students: [
+    {
+    name: "Abebe",
+    age: 34,
+    sex: "M",
+    },
+    {
+    name: "Kebede",
+    age: 44,
+    sex: "M",
+    },
+    {
+    name: "Almaz",
+    age: 27,
+    sex: "F",
+    },
+    {
+    name: "Challa",
+    age: 22,
+    sex: "M",
+    },
+    {
+    name: "Chaltu",
+    age: 19,
+    sex: "F",
+    },
+],
+};
+
+
+
+
+
+evangadiClass.lengthOfCourse = "5 Month";
+console.log(evangadiClass.lengthOfCourse);
+
+
+
