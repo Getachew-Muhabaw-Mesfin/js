@@ -357,3 +357,31 @@ function malePercent(obj) {
     console.log(percent)
 }
 malePercent(evangadiClass)
+
+
+
+// /////////////////////// Question 15 ////////////////////////////////////////
+
+/**
+ *Test the divisors of three
+Write a function that takes 2 parameters: a low and high number. Your goal is to print all
+numbers (on the console) between low and high, and for each of these numbers print
+whether or not the number is divisible by 3. If the number is divisible by 3, print the word
+"div3" directly after the number
+ */
+
+function divBy3(low, high) {
+    for(let i =low+1; i<high; i++) {
+        if(i%3 ===0) {
+            console.log(i,"div3")
+        }
+        else {
+            console.log(i)
+        }
+    }
+}
+// divBy3(1,10)
+
+
+
+
