@@ -81,4 +81,19 @@ const factorial =(num) =>{
 }
 // console.log(factorial(5)); // 120
 
- 
+
+//curry function
+const buildSandwich = (ingredient1)=>{
+    return (ingredient2)=>{
+        return (ingredient3) =>{
+            return `${ingredient1} ${ingredient2} ${ingredient3}`
+        }
+    }
+}
+const mySandwitch = buildSandwich("Bacon")("Meat")("Totmato")
+// console.log(mySandwitch)
+
+// The same as 
+const buildSammy = in1=>in2=>in3 => `${in1} ${in2} ${in3}`
+const b = buildSammy("Chees")("bread")("turky")
+// console.log(b)
