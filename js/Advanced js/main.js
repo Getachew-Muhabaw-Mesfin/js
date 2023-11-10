@@ -49,3 +49,22 @@ const credit =((num)=>{
 // credit()
 // credit()
 
+
+// Recursion > A function occurs when a function calls it s elf
+
+const recurToTen = (num=1)=>{
+    if(num>10) return
+    console.log(num)
+    num++
+    recurToTen(num)
+}
+//recurToTen() // 1-10
+
+// faibonace serias
+
+const fib = (num, array =[0,1]) =>{
+    if(num <=2) return array
+    const [nextToLast, last] =array.slice(-2)
+    return fib(num-1,[...array, nextToLast + last])
+}
+// console.log(fib(12))
