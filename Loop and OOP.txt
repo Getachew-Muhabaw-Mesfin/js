@@ -1,0 +1,16 @@
+
+
+🤔What is Loop in Programming?
+
+🧑‍💻Type of Loop in Javascript
+        ✅ for Loop
+        ✅ While Loop
+        ✅ for in Loop
+        ✅ for of loop
+        ✅ Do while loop
+        ✡️higer order function loop
+   -foreach
+   -map
+   -filter
+   -reduce 
+    
