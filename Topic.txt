@@ -1,36 +1,31 @@
-- What is Function
-- How to declare/ define Function
-- Function with Arguments
-- Function that return a Value
-- Type of Function
-   - Named functions
-   - Anonymous function
-   - Arrow Function (Popular)
-   - IIFE (Immediately Invoked Function Expression)
-   ...
-
-Flow Controls
- -Selection Flow Controls
- -Repetition Flow Controls (We will see later)
 
 
-Selection Flow Controls
-- if statment
-- if else statment
-- if else if else statment
-- switch statment
-- Ternary
+🤔What is Loop in Programming?
 
-Introduction to Algorithm 
- - What is Algorithm?
- - Steps to solve a problem
- - Things to be considered When solving Problems
-   - Big O notation => Which is time and space complexitiy 
- - Ways of writing Algorithm
-    - flow charts
-    - Pseudocode
- - Where can I get the Questions from? 
-    2 Popular Sites
-    - LeetCode => https://leetcode.com/
-    - Hacker rank => https://www.hackerrank.com/
+🧑‍💻Type of Loop in Javascript
+        ✅ for Loop
+        ✅ While Loop
+        ✅ for in Loop
+        ✅ for of loop
+        ✅ Do while loop
+        ✡️higer order function loop
+                -foreach
+                -map
+                -filter
+                -reduce 
+    
+
+🤔What is object oriented programming?
+   -There are several programming paradigms, each offering a different approach to structuring and organizing code
+    -Imperative Programming:C, Fortran.
+    -Declarative Programming:SQL, HTML.
+    -Functional Programming: Scala.
+    -Object-Oriented Programming (OOP): Java, C++, Python.
+    -Event-Driven Programming:js
+
+🧑‍💻 4 Pillar of OOP programming in OOP Programming Language
+        ✅ Encapsulation:
+        ✅ Abstraction:
+        ✅ Inheritance: 
+        ✅ Polymorphism:
 
