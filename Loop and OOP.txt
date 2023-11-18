@@ -9,8 +9,16 @@
         ✅ for of loop
         ✅ Do while loop
         ✡️higer order function loop
-   -foreach
-   -map
-   -filter
-   -reduce 
+                -foreach
+                -map
+                -filter
+                -reduce 
     
+
+🤔What is object oriented programming?
+
+🧑‍💻 4 Pillar of OOP programming in OOP Programming Language
+        ✅ Encapsulation:
+        ✅ Abstraction:
+        ✅ Inheritance: 
+        ✅ Polymorphism:
