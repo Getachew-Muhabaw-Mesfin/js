@@ -1,25 +1,3 @@
-- What is Function
-- How to declare/ define Function
-- Function with Arguments
-- Function that return a Value
-- Type of Function
-   - Named functions
-   - Anonymous function
-   - Arrow Function (Popular)
-   - IIFE (Immediately Invoked Function Expression)
-   ...
-
-Flow Controls
- -Selection Flow Controls
- -Repetition Flow Controls (We will see later)
-
-
-Selection Flow Controls
-- if statment
-- if else statment
-- if else if else statment
-- switch statment
-- Ternary
 
 Introduction to Algorithm 
  - What is Algorithm?
@@ -34,3 +12,101 @@ Introduction to Algorithm
     - LeetCode => https://leetcode.com/
     - Hacker rank => https://www.hackerrank.com/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function foo(x) {
+    alert(x);
+}
+function bar(func) {
+    func("Hello World!");
+}
+
+//alerts "Hello World!"
+bar(foo);
+
+
+// function
+
+
+// function calculator(x,y) {
+
+//     function add() {
+//         return x+y
+//     }
+//     function mul(a,b) {
+        
+//         return a*b
+//     }
+//     function sub(a,b) {
+//         return a-b
+//     }
+//     function div(a,b) {
+//         return a/b
+//     }
+//     console.log(`Addition of ${x} and ${y} is ${add()}`)
+//     // mul(x,y)
+//     // sub(x,y)
+//     // div(x,y)
+// }
+// calculator(8,4)
+
+
+
+// function calculator() {
+//     console.log("--------------Calculater----------")
+//     let x= parseInt(prompt("Please Enter First number"))
+//     let y = parseInt (prompt("Please Enter Second number"))
+//     let op = prompt("Seletct Operator : + , -, / or *")
+//     switch(op) {
+//         case "+":
+//             console.log("The Sum of Two numbers is " ,x+y)
+//             break
+//         case "*":
+//             console.log("The Sum of Two numbers is " ,x*y)
+//             break
+//         default:
+//             console.log("Invalid Operator")
+//     }
+// }
+// calculator()
+
+
+console.log("Tyoe of X is", typeof x)

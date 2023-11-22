@@ -26,16 +26,6 @@ console.log(
 
 
 
-/** Js has 6 falsy values 
- * 0
- * false
- * Empty string
- * Undefined
- * Null
- * NaN
- */
-
-
 
 // ////////////// Question 2 /////////////////////
 
@@ -104,5 +94,7 @@ let last_name = "Muhabaw"
 let full_name = `Your Name is: ${first_name} ${last_name}`
 
 console.log(`%c ${full_name}`,'font-size: 24px; color:blue')
+
+
 
 

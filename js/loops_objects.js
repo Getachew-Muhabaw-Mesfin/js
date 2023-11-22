@@ -26,12 +26,14 @@ console. Note: each output should be displayed on a new line.
  */
 
 function next5Numbers(num) {
-  for (let i = num + 1; i <= num + 5; i++) {
-    console.log(i);
-  }
+  if (typeof num === "number") {
+    for (let i = num + 1; i <= num + 5; i++) {
+      console.log(i);
+    }
+  } else console.log("Invalid Input");
 }
 
-// next5Numbers(7)
+//next5Numbers(7)
 
 ////////////////////// Question 3 ////////////////////////////
 /**
@@ -44,11 +46,15 @@ given number.
 */
 
 function sumOfNext10Numbers(num) {
-  let sum = 0;
-  for (let i = num + 1; i <= num + 10; i++) {
-    sum += i;
+  if (typeof num === "number") {
+    let sum = 0;
+    for (let i = num + 1; i <= num + 10; i++) {
+      sum += i;
+    }
+    console.log(sum);
+  } else {
+    console.log("Invalid Input");
   }
-  console.log(sum);
 }
 
 // sumOfNext10Numbers(7)
@@ -66,8 +72,12 @@ console.
  */
 
 function arrayList(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i]);
+  if (Array.isArray(arr)) {
+    for (let i = 0; i < arr.length; i++) {
+      console.log(arr[i]);
+    }
+  } else {
+    console.log("Invalid Array");
   }
 }
 let a = [1, "Hello", 8, 44];
@@ -84,7 +94,12 @@ found in the array. Hint: use a property of the Array object to solve this quest
  */
 
 function arrayLength(arr) {
-  console.log(arr.length);
+  if (Array.isArray(arr)) {
+    let length = arr.length;
+    console.log(length);
+  } else {
+    console.log("Invalid Array");
+  }
 }
 let b = [1, "Hello", 8, 44];
 // arrayLength(b)
@@ -105,7 +120,7 @@ all the numbers in the array.
 function sumOfArrays(arr) {
   let total = 0;
   for (let i = 0; i < arr.length; i++) {
-    total += arr[i];
+    if (typeof arr[i] === "number") total += arr[i];
   }
   return total;
 }
@@ -221,10 +236,13 @@ adds a new value of "32" to the array and prints the new array on the console. H
 
 let sampleArray = [5, 6, 99, 8, 76, 4, 68, 44];
 function removeLast(sampleArray) {
-  sampleArray.pop();
-  sampleArray.push(32);
-
-  console.log(sampleArray);
+  if (Array.isArray(sampleArray)) {
+    sampleArray.pop();
+    sampleArray.push(32);
+    console.log(sampleArray);
+  } else {
+    console.log("Invalid Array");
+  }
 }
 
 // removeLast(sampleArray)
@@ -248,53 +266,47 @@ function customeSort(sampleArray) {
 
 //////////////////////////// Question 11  From the give class below///////////////////
 
-
 /**
  * Change the lengthOfCourse property of the object to "5 Month" and print the new object on the
 console
     Use the dot notation "." to call the property you want to change
  */
 let evangadiClass = {
-lengthOfCourse: "1 Month",
-website: "https://www.evangadi.com/",
-isChallenging: false,
-topicsCovered: ["HTML", "CSS", "Media Query", "JavaScript"],
-students: [
+  lengthOfCourse: "1 Month",
+  website: "https://www.evangadi.com/",
+  isChallenging: false,
+  topicsCovered: ["HTML", "CSS", "Media Query", "JavaScript"],
+  students: [
     {
-    name: "Abebe",
-    age: 34,
-    sex: "M",
+      name: "Abebe",
+      age: 34,
+      sex: "M",
     },
     {
-    name: "Kebede",
-    age: 44,
-    sex: "M",
+      name: "Kebede",
+      age: 44,
+      sex: "M",
     },
     {
-    name: "Almaz",
-    age: 27,
-    sex: "F",
+      name: "Almaz",
+      age: 27,
+      sex: "F",
     },
     {
-    name: "Challa",
-    age: 22,
-    sex: "M",
+      name: "Challa",
+      age: 22,
+      sex: "M",
     },
     {
-    name: "Chaltu",
-    age: 19,
-    sex: "F",
+      name: "Chaltu",
+      age: 19,
+      sex: "F",
     },
-],
+  ],
 };
-
-
 
 evangadiClass.lengthOfCourse = "5 Month";
 console.log(evangadiClass.lengthOfCourse);
-
-
-
 
 ////////////////////////// Question 12 ////////////////
 
@@ -308,8 +320,6 @@ console
 evangadiClass.topicsCovered.push("Bootstrap");
 console.log(evangadiClass.topicsCovered);
 
-
-
 //////////////Question 14////////////////////////////////////////
 
 /**
@@ -319,22 +329,18 @@ age of the class. Print the result on the console
  */
 
 function calculateAverage(obj) {
-    let sum = 0
-    let number_of_students = obj.students.length;
-    for (let i = 0; i < number_of_students; i++) {
-        sum += obj.students[i].age
-    }
-    let average = sum/number_of_students
+  let sum = 0;
+  let number_of_students = obj.students.length;
+  for (let i = 0; i < number_of_students; i++) {
+    sum += obj.students[i].age;
+  }
+  let average = sum / number_of_students;
 
-    console.log(average) // 29.2
-    console.log(Math.round(average)); // 29
+  console.log(average); // 29.2
+  console.log(Math.round(average)); // 29
 }
 
 // calculateAverage(evangadiClass)
-
-
-
-
 
 /////////////////////////// Question 14   ///////////////////////////////
 
@@ -344,21 +350,18 @@ percentage of male students in the class. Print the result on the console
 
 */
 
-
 function malePercent(obj) {
-    let male_counter = 0
-    let total_number_0f_students = obj.students.length
-    for(let i =0; i<total_number_0f_students; i++) {
-        if(obj.students[i].sex === "M") {
-            male_counter ++
-        }
+  let male_counter = 0;
+  let total_number_0f_students = obj.students.length;
+  for (let i = 0; i < total_number_0f_students; i++) {
+    if (obj.students[i].sex === "M") {
+      male_counter++;
     }
-    let percent = (male_counter/total_number_0f_students)*100;
-    console.log(percent)
+  }
+  let percent = (male_counter / total_number_0f_students) * 100;
+  console.log(percent);
 }
-malePercent(evangadiClass)
-
-
+malePercent(evangadiClass);
 
 // /////////////////////// Question 15 ////////////////////////////////////////
 
@@ -371,22 +374,15 @@ whether or not the number is divisible by 3. If the number is divisible by 3, pr
  */
 
 function divBy3(low, high) {
-    for(let i =low+1; i<high; i++) {
-        if(i%3 ===0) {
-            console.log(i,"div3")
-        }
-        else {
-            console.log(i)
-        }
+  for (let i = low + 1; i < high; i++) {
+    if (i % 3 === 0) {
+      console.log(i, "div3");
+    } else {
+      console.log(i);
     }
+  }
 }
 // divBy3(1,10)
-
-
-
-
-
-
 
 ///////////////// Question 16 ////////////////////////////
 
@@ -398,23 +394,17 @@ numbers which are multiples of both three and five print "FizzBuzz".
  */
 
 function fizzBuzz() {
-    for (let i = 1; i < 100; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
-    console.log(i, "FizzBuzz");
+  for (let i = 1; i < 100; i++) {
+    if (i % 15 === 0) {
+      console.log(i, "FizzBuzz");
     } else if (i % 3 === 0) {
-    console.log(i, "Fizz");
+      console.log(i, "Fizz");
     } else if (i % 5 === 0) {
-    console.log(i, "Buzz");
+      console.log(i, "Buzz");
     }
-}
+  }
 }
 // fizzBuzz();
-
-
-
-
-
-
 
 ////////////// Question 17  ////////////////////////////
 
@@ -425,22 +415,19 @@ number but 3224 is not. Write a function named isEvens that prints on the consol
 integer argument is an Evens number. The function prints 0 otherwise.
  */
 
-
-
 function isEven(digits) {
-    digits = String(digits);
-    let d = ""
-    for(let i =0; i< digits.length; i++) {
-        if(digits.charAt(i)%2 ==0){
-            d = d + digits.charAt(i);
-        }
+  digits = String(digits);
+  let d = "";
+  for (let i = 0; i < digits.length; i++) {
+    if (digits.charAt(i) % 2 == 0) {
+      d = d + digits.charAt(i);
     }
-    if(d == digits) {
-        return 1
-    }
-    else {
-        return 0
-    }
+  }
+  if (d == digits) {
+    return 1;
+  } else {
+    return 0;
+  }
 }
-let e =isEven(2426);
-console.log(e)
+let e = isEven(2426);
+console.log(e);
