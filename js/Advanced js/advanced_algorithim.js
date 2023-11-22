@@ -229,3 +229,21 @@ function digitalClock(seconds) {
 console.log(digitalClock(5025));   // Output: "01:23:45"
 console.log(digitalClock(61201));  // Output: "17:00:01"
 console.log(digitalClock(87000));  // Output: "00:10:00"
+
+
+// Method 2 - use Date Object
+
+function digitalClock(seconds) {
+  const date = new Date(seconds * 1000); // Convert seconds to milliseconds
+
+  const hours = date.getUTCHours().toString().padStart(2, '0');
+  const minutes = date.getUTCMinutes().toString().padStart(2, '0');
+  const secondsFormatted = date.getUTCSeconds().toString().padStart(2, '0');
+
+  return `${hours}:${minutes}:${secondsFormatted}`;
+}
+
+// Examples
+console.log(digitalClock(5025));   // Output: "01:23:45"
+console.log(digitalClock(61201));  // Output: "17:00:01"
+console.log(digitalClock(87000));  // Output: "00:10:00"
