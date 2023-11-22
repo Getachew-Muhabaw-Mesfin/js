@@ -137,3 +137,35 @@ Meera array”
 ○ Test 1: checkMeera([1, -6, 4, -3]) outputs “I am NOT a Meera array” because -3
 *2 is -6
  */
+
+function checkMeera(arr){
+    if(Array.isArray(arr)) {
+    let str = "I am a Meera array";
+    for(let i=0; i<arr.length; i++) {
+        if(arr.includes(arr[i]*2)) {
+        str="I am NOT a Meera array"
+        break;
+        }
+    }
+    console.log(str)
+    }
+    else{
+        console.log("Not Array")
+    }
+}
+
+// checkMeera([10, 4, 0, 5]) //outputs “I am NOT a Meera array”
+// checkMeera([7, 4, 9]) //outputs “I am a Meera array”
+// checkMeera([1, -6, 4, -3]) //outputs “I am NOT a Meera array”
+// checkMeera([1, -6, 4, 3]) //outputs “I am a Meera array”
+
+
+/**
+Question 5 (Dual array)
+● Define a Dual array to be an array where every value occurs exactly twice. For example,
+{1, 2, 1, 3, 3, 2} is a dual array.The following arrays are not Dual arrays {2, 5, 2, 5, 5} (5
+occurs three times instead of two times) {3, 1, 1, 2, 2} (3 occurs once instead of two
+times) Write a function named isDual that returns 1 if its array argument is a Dual array.
+Otherwise it returns 0.
+
+ */
