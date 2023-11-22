@@ -169,3 +169,45 @@ times) Write a function named isDual that returns 1 if its array argument is a D
 Otherwise it returns 0.
 
  */
+
+/**
+ * 1. Array Length must be even
+ * 2. sort the Array
+ * 3. if 
+ * 
+ */
+
+function checkDualArray(arr) {
+if (Array.isArray(arr)) {
+    if(arr.length%2 !==0){
+        console.log("Not Dual Array")
+    }
+    else{
+        arr = arr.sort((a, b) => a - b);
+        let arry1 = [];
+        let arry2 = [];
+        for (let i = 0; i < arr.length; i += 2) {
+          arry1.push(arr[i]);
+          arry2.push(arr[i + 1]);
+        }
+        // console.log(arry1);
+        // console.log(arry2);
+        if(arry1.toString() === arry2.toString()){
+            console.log("Dual Array!")
+        }
+        else{
+             console.log("Not Dual Array")
+        }
+    }
+}
+}
+
+let t1 = [1, 2, 1, 3, 3,2];
+let t2 = [2,2, 5, 5,6,6,6];
+let t3 = [3, 1, 1, 2, 2]; 
+let t4 = [2]; 
+
+checkDualArray(t1) // Dual Array
+checkDualArray(t2) // Not Daul Array
+checkDualArray(t3) // Not Daul Array
+checkDualArray(t4) // Not Daul Array
