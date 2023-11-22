@@ -170,44 +170,62 @@ Otherwise it returns 0.
 
  */
 
+// Method 1
+function isDual(arr) {
+  if (Array.isArray(arr)) {
+    if (arr.length % 2 !== 0) {
+      return 0
+    } else {
+      arr = arr.sort((a, b) => a - b);
+      let arry1 = [];
+      let arry2 = [];
+      for (let i = 0; i < arr.length; i += 2) {
+        arry1.push(arr[i]);
+        arry2.push(arr[i + 1]);
+      }
+      if (arry1.toString() === arry2.toString()) {
+        return 1
+      } else {
+        return 0
+      }
+    }
+  }
+}
+// console.log(isDual([1, 2, 1, 3, 3, 2]));
+// console.log(isDual([2, 5, 2, 5, 5]));
+// console.log(isDual([3, 1, 1, 2, 2]));
+
+
+
 /**
- * 1. Array Length must be even
- * 2. sort the Array
- * 3. if 
- * 
+ * Question 6
+● Write a function that takes the number of seconds and returns the digital format clock
+time as a string. Time should be counted from 00:00:00.
+○ Examples: digitalClock(5025) as "01:23:45" 5025 seconds is 1 hour, 23 mins, 45
+secs.
+■ digitalClock(61201) as "17:00:01" No AM/PM. 24h format.
+■ digitalClock(87000) as "00:10:00" It's 00:10 next day.
  */
 
-function checkDualArray(arr) {
-if (Array.isArray(arr)) {
-    if(arr.length%2 !==0){
-        console.log("Not Dual Array")
-    }
-    else{
-        arr = arr.sort((a, b) => a - b);
-        let arry1 = [];
-        let arry2 = [];
-        for (let i = 0; i < arr.length; i += 2) {
-          arry1.push(arr[i]);
-          arry2.push(arr[i + 1]);
-        }
-        // console.log(arry1);
-        // console.log(arry2);
-        if(arry1.toString() === arry2.toString()){
-            console.log("Dual Array!")
-        }
-        else{
-             console.log("Not Dual Array")
-        }
-    }
-}
+function digitalClock(seconds) {
+  // Calculate hours, minutes, and remaining seconds
+  const hours = Math.floor(seconds / 3600)%24;
+  const minutes = Math.floor((seconds % 3600) / 60);
+  const remainingSeconds = seconds % 60;
+
+  // Format the time components with leading zeros if needed
+  
+  const formattedHours = String(hours).padStart(2, '0');
+  const formattedMinutes = String(minutes).padStart(2, '0');
+  const formattedSeconds = String(remainingSeconds).padStart(2, '0');
+
+  // Construct the digital clock time string
+  const timeString = `${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
+
+  return timeString;
 }
 
-let t1 = [1, 2, 1, 3, 3,2];
-let t2 = [2,2, 5, 5,6,6,6];
-let t3 = [3, 1, 1, 2, 2]; 
-let t4 = [2]; 
-
-checkDualArray(t1) // Dual Array
-checkDualArray(t2) // Not Daul Array
-checkDualArray(t3) // Not Daul Array
-checkDualArray(t4) // Not Daul Array
+// Examples
+console.log(digitalClock(5025));   // Output: "01:23:45"
+console.log(digitalClock(61201));  // Output: "17:00:01"
+console.log(digitalClock(87000));  // Output: "00:10:00"
