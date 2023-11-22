@@ -159,6 +159,28 @@ function checkMeera(arr){
 // checkMeera([1, -6, 4, -3]) //outputs “I am NOT a Meera array”
 // checkMeera([1, -6, 4, 3]) //outputs “I am a Meera array”
 
+// Method 2 ----
+function checkMeera(arr) {
+  // Iterate through each element in the array
+  for (let i = 0; i < arr.length; i++) {
+    const currentElement = arr[i];
+
+    // Check if both the element and its double are present in the array
+    if (arr.includes(currentElement) && arr.includes(currentElement * 2)) {
+      console.log("I am NOT a Meera array");
+      return;
+    }
+  }
+
+  // If no element and its double are found together, it is a Meera array
+  console.log("I am a Meera array");
+}
+
+// Test Cases
+checkMeera([10, 4, 0, 5]);    // Output: "I am NOT a Meera array"
+checkMeera([7, 4, 9]);        // Output: "I am a Meera array"
+checkMeera([1, -6, 4, -3]);    // Output: "I am NOT a Meera array"
+
 
 /**
 Question 5 (Dual array)
