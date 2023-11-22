@@ -195,6 +195,41 @@ function isDual(arr) {
 // console.log(isDual([2, 5, 2, 5, 5]));
 // console.log(isDual([3, 1, 1, 2, 2]));
 
+// Method 2 ---------
+
+function isDual(arr) {
+  // Check if the array length is even
+  if (arr.length % 2 !== 0) {
+    return 0;
+  }
+
+  // Create an object to store occurrences of each value
+  const occurrences = {};
+
+  // Count occurrences of each value in the array
+  for (let i = 0; i < arr.length; i++) {
+    const currentValue = arr[i];
+    occurrences[currentValue] = (occurrences[currentValue] || 0) + 1;
+  }
+
+  // Check if all values occur exactly twice
+  for (const value in occurrences) {
+    if (occurrences[value] !== 2) {
+      return 0;
+    }
+  }
+
+  // If all values occur exactly twice, it is a dual array
+  return 1;
+}
+
+// Examples
+//console.log(isDual([1, 2, 1, 3, 3, 2])); // Output: 1 (Dual array)
+//console.log(isDual([2, 5, 2, 5, 5]));    // Output: 0 (Not a dual array)
+//console.log(isDual([3, 1, 1, 2, 2]));    // Output: 0 (Not a dual array)
+
+
+
 
 
 /**
