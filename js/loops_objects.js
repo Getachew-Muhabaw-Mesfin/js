@@ -118,11 +118,11 @@ all the numbers in the array.
 */
 
 function sumOfArrays(arr) {
-  let total = 0;
+  let sum = 0;
   for (let i = 0; i < arr.length; i++) {
-    if (typeof arr[i] === "number") total += arr[i];
+    if (typeof arr[i] === "number") sum += arr[i];
   }
-  return total;
+  return sum;
 }
 
 // let arry = [5, 6, 99, 8, 76, 4, 68, 44];
@@ -196,15 +196,28 @@ be:
  */
 
 function evenIndexElements(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    if (i % 2 === 0) {
-      console.log(arr[i]);
+  if (Array.isArray(arr)){
+    for (let i = 0; i < arr.length; i++) {
+      if (i % 2 === 0) {
+        console.log(arr[i]);
+      }
     }
-  }
+    }
 }
 
 // evenIndexElements([5, 6, 99, 8, 76, 4, 68, 44]);
 // evenIndexElements([11, "Sam", 3, 7, "car"])
+
+//Method 2
+function evenIndexs(arr){
+  if(Array.isArray(arr)){
+    arr.filter((num,index)=>{
+      if(index%2==0){
+        console.log(num)
+      }
+    })
+  }
+}
 
 //// Bones
 //Why javascript sort gets so many memes -> https://www.youtube.com/watch?v=u7NFUX62-cM
@@ -363,7 +376,7 @@ function malePercent(obj) {
 }
 malePercent(evangadiClass);
 
-// /////////////////////// Question 15 ////////////////////////////////////////
+// ////////////////// Question 15 ////////////////////////////////////////
 
 /**
  *Test the divisors of three
