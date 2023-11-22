@@ -1,3 +1,25 @@
+- What is Function
+- How to declare/ define Function
+- Function with Arguments
+- Function that return a Value
+- Type of Function
+   - Named functions
+   - Anonymous function
+   - Arrow Function (Popular)
+   - IIFE (Immediately Invoked Function Expression)
+   ...
+
+Flow Controls
+ -Selection Flow Controls
+ -Repetition Flow Controls (We will see later)
+
+
+Selection Flow Controls
+- if statment
+- if else statment
+- if else if else statment
+- switch statment
+- Ternary
 
 Introduction to Algorithm 
  - What is Algorithm?
